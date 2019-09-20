@@ -3,7 +3,7 @@ def myPipeline() {
         agent any
            options {
               timestamps()
-              timeout(time: 5, unit: 'MINUTES') }
+              timeout(time: 5, unit: 'MINUTES')
         }
         stages{
 		stage("fetch from repository"){
